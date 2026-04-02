@@ -1,0 +1,21 @@
+{
+  "site": "mezzalunamarietta.com",
+  "pages": [
+    { "path": "/", "type": "homepage", "status": "approved", "title": "Home" },
+    { "path": "/menu/", "type": "subpage", "status": "approved", "title": "Menu" },
+    { "path": "/drinkmenu/", "type": "subpage", "status": "approved", "title": "Drink & Dessert Menu" },
+    { "path": "/specialsmenu/", "type": "subpage", "status": "approved", "title": "Specials" },
+    { "path": "/gallery/", "type": "subpage", "status": "approved", "title": "Gallery" },
+    { "path": "/events/", "type": "subpage", "status": "approved", "title": "Events" },
+    { "path": "/social-club/", "type": "subpage", "status": "approved", "title": "Social Club" },
+    { "path": "/reservations/", "type": "subpage", "status": "approved", "title": "Reservations" },
+    { "path": "/careers/", "type": "subpage", "status": "approved", "title": "Careers" }
+  ],
+  "build_decisions": {
+    "excluded_pages": [
+      { "path": "/comingsoon", "redirect_to": "/" },
+      { "path": "/privacypolicy", "redirect_to": "/" }
+    ],
+    "final_build_count": 9
+  }
+}

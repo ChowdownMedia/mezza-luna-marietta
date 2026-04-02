@@ -1,0 +1,94 @@
+{
+  "site": {
+    "name": "Mezza Luna Pasta & Seafood Marietta",
+    "domain": "mezzalunamarietta.com"
+  },
+  "pages": {
+    "/": {
+      "title": "Mezza Luna Pasta & Seafood Marietta",
+      "description": "Authentic Italian restaurant in Marietta, GA. Fresh pasta, seafood, craft cocktails and desserts at 2100 Roswell Rd. Lunch, dinner, catering and private events.",
+      "headings": [
+        { "level": "h1", "text": "Mezza Luna Furfaro Italian Restaurant" },
+        { "level": "h2", "text": "Welcome To" }
+      ],
+      "body_copy": [
+        "Step into Mezza Luna, where the charm of Italy meets contemporary dining. From the warm ambiance to the vibrant flavors of our dishes, we invite you to savor an unforgettable experience. Whether you're here for a casual meal, a special celebration, or a relaxing evening with friends, our team is dedicated to making every moment memorable. At Mezza Luna, every visit is a taste of authentic Italian hospitality."
+      ],
+      "sections": ["story", "menu_cta", "gallery"]
+    },
+    "/menu/": {
+      "title": "Food Menu",
+      "description": "Mezza Luna Marietta food menu featuring fresh pasta, seafood, veal, chicken and appetizers. Italian dining in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Our Menu" }
+      ],
+      "body_copy": [],
+      "menu_pdf": "https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/69ab7445b3fc00691b378858.pdf"
+    },
+    "/drinkmenu/": {
+      "title": "Drink & Dessert Menu",
+      "description": "Craft cocktails, wines, beers and desserts at Mezza Luna Marietta. Full bar and dessert menu in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Our Drinks" }
+      ],
+      "body_copy": [],
+      "menu_pdf": "https://storage.googleapis.com/msgsndr/xfiCeeXzsXHOVwOfWGzB/media/687973b4817a8425450b505d.pdf"
+    },
+    "/specialsmenu/": {
+      "title": "Specials",
+      "description": "Weekly specials at Mezza Luna Marietta. Rotating seasonal dishes and chef's selections in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Specials" }
+      ],
+      "body_copy": [],
+      "menu_pdf": "https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/69ab74457bdf38a1e8b30b51.pdf"
+    },
+    "/gallery/": {
+      "title": "Gallery",
+      "description": "Photos of dishes, cocktails and dining at Mezza Luna Marietta. Authentic Italian food in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Gallery" },
+        { "level": "h2", "text": "Our Delicious Memories" }
+      ],
+      "body_copy": []
+    },
+    "/events/": {
+      "title": "Events",
+      "description": "Live music, wine dinners and special events at Mezza Luna Marietta. Check our calendar for upcoming events in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Upcoming Events" }
+      ],
+      "body_copy": []
+    },
+    "/social-club/": {
+      "title": "Social Club",
+      "description": "Join the Mezza Luna Social Club for exclusive offers, event invites and VIP perks at our Marietta, GA location.",
+      "headings": [
+        { "level": "h1", "text": "Join Our Social Club" }
+      ],
+      "body_copy": [
+        "Join our Social Club at Mezza Luna Pasta & Seafood! Simply fill out the form below and become a part of our exclusive community. Enjoy a front-row to all the fun and flavor that Mezza Luna Pasta & Seafood has to offer. Don't miss out on the perks — sign up today and elevate your dining experience to a whole new level!"
+      ]
+    },
+    "/reservations/": {
+      "title": "Reservations",
+      "description": "Make a reservation at Mezza Luna Marietta. Book online or call (678)-214-5856. Private dining for groups up to 60 in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Reservations" }
+      ],
+      "body_copy": [
+        "Please wait for a confirmation email! Reservations may be declined due to maximum capacity. Call us for an instant reservation at 678-214-5856. Online reservations must be submitted 3 hours in advance! If your party includes more than 10 guests, please call us at 678-214-5856 for details. We can accommodate groups of up to 60 people."
+      ]
+    },
+    "/careers/": {
+      "title": "Careers",
+      "description": "Join the Mezza Luna Marietta team. Restaurant jobs available — apply online or call (678)-214-5856 in Marietta, GA.",
+      "headings": [
+        { "level": "h1", "text": "Careers" }
+      ],
+      "body_copy": [
+        "We are hiring! Apply below to become a part of our awesome team and we'll get back to you ASAP! Alternatively if you have questions you can call us at (678) 214-5856."
+      ]
+    }
+  }
+}

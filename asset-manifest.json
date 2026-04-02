@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "original_url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/675987983c5cd58396b1bb39.jpeg",
+    "local_path": "/assets/images/home/hero.webp"
+  },
+  "logo": {
+    "original_url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/6819fe02bbd7a9757338b7ec.png",
+    "local_path": "/assets/images/home/logo.webp"
+  },
+  "story": {
+    "original_url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/6759804d068d2934ebfee249.jpeg",
+    "local_path": "/assets/images/home/story.webp"
+  },
+  "og_share": {
+    "original_url": "",
+    "local_path": "/assets/images/home/og-share.jpg"
+  },
+  "food1": {
+    "original_url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/675981a3b5c094013453254f.jpeg",
+    "local_path": "/assets/images/home/food1.webp"
+  },
+  "food2": {
+    "original_url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/675982265f5b958afcef6dfe.jpeg",
+    "local_path": "/assets/images/home/food2.webp"
+  },
+  "food3": {
+    "original_url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/67598d3fcfda7a3569daa28e.jpeg",
+    "local_path": "/assets/images/home/food3.webp"
+  },
+  "gallery_1": { "local_path": "/assets/images/home/gallery-1.webp" },
+  "gallery_2": { "local_path": "/assets/images/home/gallery-2.webp" },
+  "gallery_3": { "local_path": "/assets/images/home/gallery-3.webp" },
+  "gallery_4": { "local_path": "/assets/images/home/gallery-4.webp" },
+  "gallery_5": { "local_path": "/assets/images/home/gallery-5.webp" },
+  "gallery_6": { "local_path": "/assets/images/home/gallery-6.webp" },
+  "gallery_7": { "local_path": "/assets/images/home/gallery-7.webp" },
+  "gallery_8": { "local_path": "/assets/images/home/gallery-8.webp" }
+}
