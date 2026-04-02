@@ -43,6 +43,8 @@
   <!-- SLOT: lcp_preload -->
   
   
+  <link rel="preload" as="image" href="/assets/images/home/hero.webp" fetchpriority="high">
+  
 
   <!-- Font preloads -->
   <!-- SLOT: font_preloads -->
@@ -53,7 +55,7 @@
   <!-- Critical inline CSS — above-fold styles from base.css -->
   <style>
   <!-- SLOT: critical_css -->
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:'Lato',system-ui,sans-serif;color:#f5f5f5;background:#1a1a1a;overflow-x:hidden}.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background .3s}.site-header.scrolled{background:rgba(0,0,0,.95);box-shadow:0 2px 10px rgba(0,0,0,.3)}.navbar{width:100%;padding:10px 0}.nav-container{display:flex;align-items:center;justify-content:center;width:90%;max-width:1280px;margin:0 auto;position:relative}.nav-logo img{height:100px;width:auto}.nav-left,.nav-right{display:flex;list-style:none;gap:20px;align-items:center}.nav-left a,.nav-right a{font-family:'Libre Baskerville',serif;text-transform:uppercase;color:#fff;text-decoration:none;font-size:clamp(.875rem,.875rem + ((1vw - .2rem)*.542),1.2rem)}.hero{position:relative;width:100%;height:85vh;min-height:500px;overflow:hidden}.hero-image,.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.5)}.container{width:90%;max-width:1280px;margin:0 auto}.btn{display:inline-block;font-family:'Libre Baskerville',serif;text-transform:uppercase;font-weight:700;background:#8B1A1A;color:#fff;border:2px solid #8B1A1A;padding:10px 30px;border-radius:10px;text-decoration:none}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:'Lato',system-ui,sans-serif;color:#f5f5f5;background:#1a1a1a;overflow-x:hidden}.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background .3s}.site-header.scrolled{background:rgba(0,0,0,.95);box-shadow:0 2px 10px rgba(0,0,0,.3)}.navbar{width:100%;padding:10px 0}.nav-container{display:flex;align-items:center;justify-content:center;width:90%;max-width:1280px;margin:0 auto;position:relative}.nav-logo img{height:100px;width:auto}.nav-left,.nav-right{display:flex;list-style:none;gap:20px;align-items:center}.nav-left a,.nav-right a{font-family:'Libre Baskerville',serif;text-transform:uppercase;color:#fff;text-decoration:none}.hero{position:relative;width:100%;height:85vh;min-height:500px;overflow:hidden}.hero-image,.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.5)}.container{width:90%;max-width:1280px;margin:0 auto}.btn{display:inline-block;font-family:'Libre Baskerville',serif;text-transform:uppercase;font-weight:700;background:#8B1A1A;color:#fff;border:2px solid #8B1A1A;padding:10px 30px;border-radius:10px;text-decoration:none}
   </style>
 
   <!-- Icons — inlined to eliminate render-blocking request -->
@@ -98,6 +100,7 @@
 .icon-xl { width: 1.5em; height: 1.5em; }
 .icon-2x { width: 2em; height: 2em; }
 
+
 /* --------------------------------------------------------------------------
    Social icons
    -------------------------------------------------------------------------- */
@@ -136,6 +139,7 @@
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M166.4 280.2a56 56 0 10-112 0 56 56 0 00112 0zm-28 0a28 28 0 11-56 0 28 28 0 0156 0zm310.4 0a56 56 0 10-112 0 56 56 0 00112 0zm-28 0a28 28 0 11-56 0 28 28 0 0156 0zM288 164.8c-81.5 0-155.4 33-208.8 86.3l-73.4-62.4H76c46.8-36 104.3-57.6 166-61.2L288 120l46 7.5c61.7 3.6 119.2 25.2 166 61.2h69.8l-73.4 62.4A296.7 296.7 0 00288 164.8zM110.4 280.2a98 98 0 10196 0 98 98 0 00-196 0zm364 0a98 98 0 10-196 0 98 98 0 00196 0zM288 358.4a164.4 164.4 0 01-57.6-10.4l57.6 50.4 57.6-50.4a164.4 164.4 0 01-57.6 10.4z'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M166.4 280.2a56 56 0 10-112 0 56 56 0 00112 0zm-28 0a28 28 0 11-56 0 28 28 0 0156 0zm310.4 0a56 56 0 10-112 0 56 56 0 00112 0zm-28 0a28 28 0 11-56 0 28 28 0 0156 0zM288 164.8c-81.5 0-155.4 33-208.8 86.3l-73.4-62.4H76c46.8-36 104.3-57.6 166-61.2L288 120l46 7.5c61.7 3.6 119.2 25.2 166 61.2h69.8l-73.4 62.4A296.7 296.7 0 00288 164.8zM110.4 280.2a98 98 0 10196 0 98 98 0 00-196 0zm364 0a98 98 0 10-196 0 98 98 0 00196 0zM288 358.4a164.4 164.4 0 01-57.6-10.4l57.6 50.4 57.6-50.4a164.4 164.4 0 01-57.6 10.4z'/%3E%3C/svg%3E");
 }
+
 
 /* --------------------------------------------------------------------------
    UI icons
@@ -176,6 +180,7 @@
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z'/%3E%3C/svg%3E");
 }
 
+
 /* --------------------------------------------------------------------------
    Contact icons
    -------------------------------------------------------------------------- */
@@ -194,6 +199,7 @@
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M172.3 501.7C27 291 0 269.4 0 192 0 86 86 0 192 0s192 86 192 192c0 77.4-27 99-172.3 309.7-9.5 13.8-29.9 13.8-39.4 0zM192 272c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80z'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M172.3 501.7C27 291 0 269.4 0 192 0 86 86 0 192 0s192 86 192 192c0 77.4-27 99-172.3 309.7-9.5 13.8-29.9 13.8-39.4 0zM192 272c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80z'/%3E%3C/svg%3E");
 }
+
 
 /* --------------------------------------------------------------------------
    Content icons
@@ -224,6 +230,7 @@
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath d='M519.2 127.9l-47.6-47.6A56.3 56.3 0 00431.5 60H208.5a56.3 56.3 0 00-40.1 16.6L120.8 124H64c-35.3 0-64 28.7-64 64v192c0 35.3 28.7 64 64 64h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H64c-17.7 0-32-14.3-32-32V188c0-17.7 14.3-32 32-32h72.7l64.8-68.2a24.1 24.1 0 0117.2-7.1h223.1c6.5 0 12.7 2.6 17.2 7.1l64.8 68.2H576c17.7 0 32 14.3 32 32v180c0 17.7-14.3 32-32 32h-48c-17.7 0-32 14.3-32 32s14.3 32 32 32h48c35.3 0 64-28.7 64-64V188c0-35.3-28.7-64-64-64h-56.8z'/%3E%3C/svg%3E");
 }
 
+
 /* --------------------------------------------------------------------------
    Media icons
    -------------------------------------------------------------------------- */
@@ -237,6 +244,7 @@
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M215 71l-89 89H24a24 24 0 00-24 24v144a24 24 0 0024 24h102l89 89a24 24 0 0040-17V88a24 24 0 00-40-17zm233.6-19.4a16 16 0 00-22.6 0C381.9 95.9 352 154.8 352 224s29.9 128.1 73.4 172.4a16 16 0 0022.6 0c51.9-51.9 82.4-120.5 82.4-204.4S500.5 83.5 448.6 51.6zm-64 64a16 16 0 00-22.6 0C337.9 139.9 320 178.8 320 224s17.9 84.1 41.4 108.4a16 16 0 0022.6 0C417.9 298.1 440 259.2 440 224s-22.1-74.1-55.4-108.4z'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M215 71l-89 89H24a24 24 0 00-24 24v144a24 24 0 0024 24h102l89 89a24 24 0 0040-17V88a24 24 0 00-40-17zm233.6-19.4a16 16 0 00-22.6 0C381.9 95.9 352 154.8 352 224s29.9 128.1 73.4 172.4a16 16 0 0022.6 0c51.9-51.9 82.4-120.5 82.4-204.4S500.5 83.5 448.6 51.6zm-64 64a16 16 0 00-22.6 0C337.9 139.9 320 178.8 320 224s17.9 84.1 41.4 108.4a16 16 0 0022.6 0C417.9 298.1 440 259.2 440 224s-22.1-74.1-55.4-108.4z'/%3E%3C/svg%3E");
 }
+
 
 /* --------------------------------------------------------------------------
    Chevron (nav dropdown indicator)
@@ -350,22 +358,85 @@
       <ul class="nav-left">
         
         
-        <li><a href=""></a></li>
+        <li class="has-dropdown">
+          <a href="#">Menu <i class="icon icon-chevron-down" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            
+            <li><a href="https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/69ab7445b3fc00691b378858.pdf" target="_blank" rel="noopener">Food Menu</a></li>
+            
+            <li><a href="https://storage.googleapis.com/msgsndr/xfiCeeXzsXHOVwOfWGzB/media/687973b4817a8425450b505d.pdf" target="_blank" rel="noopener">Drink & Dessert Menu</a></li>
+            
+            <li><a href="https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/69ab74457bdf38a1e8b30b51.pdf" target="_blank" rel="noopener">To-Go Menu</a></li>
+            
+            <li><a href="https://storage.googleapis.com/msgsndr/xfiCeeXzsXHOVwOfWGzB/media/67acb941feff7e8cb6edcc79.pdf" target="_blank" rel="noopener">Catering Menu</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li class="has-dropdown">
+          <a href="#">Online Ordering <i class="icon icon-chevron-down" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            
+            <li><a href="https://direct.chownow.com/order/11197/locations/15454" target="_blank" rel="noopener">ChowNow</a></li>
+            
+            <li><a href="https://slicelife.com/restaurants/ga/marietta/30062/mezza-luna-pasta-seafood/menu" target="_blank" rel="noopener">Slice</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li><a href="/gallery/">Gallery</a></li>
+        
+        
+        
+        <li><a href="/social-club/">Social Club</a></li>
         
         
       </ul>
 
       <ul class="nav-right">
         
-        >Catering <i class="icon icon-chevron-down" aria-hidden="true"></i></a>
+        
+        <li><a href="https://www.ezcater.com/catering/pvt/mezza-luna-pasta-and-seafood-marietta?fcv=1" target="_blank" rel="noopener">Catering</a></li>
+        
+        
+        
+        <li><a href="/careers/">Careers</a></li>
+        
+        
+        
+        <li class="has-dropdown">
+          <a href="#">Delivery <i class="icon icon-chevron-down" aria-hidden="true"></i></a>
           <ul class="dropdown">
             
+            <li><a href="https://www.doordash.com/store/mezza-luna-marietta-marietta-26064093/" target="_blank" rel="noopener">DoorDash</a></li>
+            
+            <li><a href="https://www.ubereats.com/store/mezza-luna-pasta-and-seafood-marietta/vCItwDTGUMe5kfEZJJwskQ" target="_blank" rel="noopener">UberEats</a></li>
+            
+            <li><a href="https://www.grubhub.com/restaurant/mezza-luna-pasta--seafood-marietta-2100-roswell-rd-2198-marietta/7534792" target="_blank" rel="noopener">GrubHub</a></li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li><a href="/reservations/">Reservations</a></li>
+        
+        
       </ul>
 
       
       <div class="nav-cta">
         
-        <a href="https://direct.chownow.com/order/11197/locations/15454" class="btn btn-sm"
+        <a href="https://direct.chownow.com/order/11197/locations/15454" class="btn btn-sm" target="_blank" rel="noopener">Order Online</a>
+        
+        <a href="/reservations/" class="btn btn-sm">Reservations</a>
+        
+      </div>
+      
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -373,81 +444,87 @@
     </div>
   </nav>
 
-  
-  <!-- ===== Center-Nav Layout (default) ===== -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <ul class="nav-left">
-        
-        >Menu <i class="icon icon-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown">
-            
-      </ul>
-
-      <a href="/" class="nav-logo">
-        <img src="/assets/images/home/logo.webp"
-             alt="Mezza Luna Pasta & Seafood Marietta"
-             width="200"
-             height="140">
-      </a>
-
-      <ul class="nav-right">
-        
-        >Catering <i class="icon icon-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown">
-            
-      </ul>
-
-      
-      <div class="nav-cta">
-        
-        <a href="https://direct.chownow.com/order/11197/locations/15454" class="btn btn-sm"
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
   
 
   <!-- Mobile Menu — mirrors desktop nav exactly, includes CTAs as links -->
   <div class="mobile-menu" id="mobile-menu">
     <ul>
       
-      ></a></li>
-          
-      ></a></li>
-          
-      ></a></li>
-          
-      ></a></li>
-          
-        </ul>
-      </li>
       
-      <li><a href=""></a></li>
-      
-      
-
-      
-      ></a></li>
+      <li class="mobile-dropdown">
+        <a href="#" class="mobile-dropdown-toggle">Menu</a>
+        <ul class="mobile-sub">
           
-      ></a></li>
+          <li><a href="https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/69ab7445b3fc00691b378858.pdf" target="_blank" rel="noopener">Food Menu</a></li>
           
-      ></a></li>
+          <li><a href="https://storage.googleapis.com/msgsndr/xfiCeeXzsXHOVwOfWGzB/media/687973b4817a8425450b505d.pdf" target="_blank" rel="noopener">Drink & Dessert Menu</a></li>
           
-      ></a></li>
+          <li><a href="https://assets.cdn.filesafe.space/xfiCeeXzsXHOVwOfWGzB/media/69ab74457bdf38a1e8b30b51.pdf" target="_blank" rel="noopener">To-Go Menu</a></li>
+          
+          <li><a href="https://storage.googleapis.com/msgsndr/xfiCeeXzsXHOVwOfWGzB/media/67acb941feff7e8cb6edcc79.pdf" target="_blank" rel="noopener">Catering Menu</a></li>
           
         </ul>
       </li>
       
-      <li><a href=""></a></li>
+      
+      
+      <li class="mobile-dropdown">
+        <a href="#" class="mobile-dropdown-toggle">Online Ordering</a>
+        <ul class="mobile-sub">
+          
+          <li><a href="https://direct.chownow.com/order/11197/locations/15454" target="_blank" rel="noopener">ChowNow</a></li>
+          
+          <li><a href="https://slicelife.com/restaurants/ga/marietta/30062/mezza-luna-pasta-seafood/menu" target="_blank" rel="noopener">Slice</a></li>
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li><a href="/gallery/">Gallery</a></li>
+      
+      
+      
+      <li><a href="/social-club/">Social Club</a></li>
       
       
 
       
       
-      <li><a href="https://direct.chownow.com/order/11197/locations/15454" class="btn btn-sm"
+      <li><a href="https://www.ezcater.com/catering/pvt/mezza-luna-pasta-and-seafood-marietta?fcv=1" target="_blank" rel="noopener">Catering</a></li>
+      
+      
+      
+      <li><a href="/careers/">Careers</a></li>
+      
+      
+      
+      <li class="mobile-dropdown">
+        <a href="#" class="mobile-dropdown-toggle">Delivery</a>
+        <ul class="mobile-sub">
+          
+          <li><a href="https://www.doordash.com/store/mezza-luna-marietta-marietta-26064093/" target="_blank" rel="noopener">DoorDash</a></li>
+          
+          <li><a href="https://www.ubereats.com/store/mezza-luna-pasta-and-seafood-marietta/vCItwDTGUMe5kfEZJJwskQ" target="_blank" rel="noopener">UberEats</a></li>
+          
+          <li><a href="https://www.grubhub.com/restaurant/mezza-luna-pasta--seafood-marietta-2100-roswell-rd-2198-marietta/7534792" target="_blank" rel="noopener">GrubHub</a></li>
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li><a href="/reservations/">Reservations</a></li>
+      
+      
+
+      
+      
+      <li><a href="https://direct.chownow.com/order/11197/locations/15454" class="btn btn-sm" target="_blank" rel="noopener">Order Online</a></li>
+      
+      <li><a href="/reservations/" class="btn btn-sm">Reservations</a></li>
+      
+      
 
       <!-- Social links — only renders icons for configured platforms -->
       <li class="mobile-social">
@@ -463,39 +540,8 @@
   </div>
 </header>
 
+
   <!-- Hero -->
-  
-
-  <!-- Video — streams after page load, replaces poster -->
-  <video class="hero-video"
-         autoplay muted loop playsinline
-         preload="none"
-         >
-    <source src="" type="video/mp4">
-  </video>
-
-  <!-- Overlay -->
-  <div class="hero-overlay"></div>
-
-  <!-- Content -->
-  <div class="hero-content">
-    
-    <h1 class="hero-title">Mezza Luna</h1>
-    
-    
-    <p class="hero-subtitle text-script">Furfaro Italian Restaurant</p>
-    
-    
-    <a href="/menu/" class="btn"
-  </div>
-
-  <!-- Video play/pause toggle -->
-  <button class="hero-video-toggle" id="hero-video-toggle" aria-label="Pause video">
-    <i class="icon icon-pause" aria-hidden="true"></i>
-  </button>
-
-</section>
-
   
   <!-- ========== HERO IMAGE — Config-driven, rendered by scaffold.py ==========
      Full-width image hero. Used when config.features.hero_type == "image".
@@ -508,6 +554,7 @@
        - rel="preload" for this image added to <head> by scaffold.py
        - No loading="lazy" — above the fold
      ========================================================================== -->
+
 
 <section class="hero">
 
@@ -529,7 +576,12 @@
     <p class="hero-subtitle text-script">Furfaro Italian Restaurant</p>
     
     
-    <a href="/menu/" class="btn"
+    <a href="/menu/" class="btn">View Our Menu</a>
+    
+  </div>
+
+</section>
+
 
   
 
@@ -558,13 +610,162 @@
      Auto-play toggle: icon-pause / icon-play (toggled by main.js)
      ========================================================================== -->
 
+
 <section class="section-reviews" id="section-reviews">
   <div class="reviews-overlay"></div>
   <div class="container reviews-inner">
     <h2 class="reviews-title">What Our Customers Are Saying</h2>
 
     <div class="reviews-carousel" id="reviews-carousel"
-         
+         >
+
+      
+      <!-- ===== Static mode: reviews rendered at build time ===== -->
+      
+      <div class="review-slide active">
+        <h3 class="reviews-source">
+          Review by &ndash;
+          
+          <i class="icon icon-google" aria-hidden="true"></i>
+          
+          
+          
+          
+          Google
+        </h3>
+        <p class="review-author">
+          Sarah M.:
+          
+          <span class="stars">
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+          </span>
+          
+        </p>
+        <div class="review-body">
+          <span class="quote-mark"><i class="icon icon-quote-left" aria-hidden="true"></i></span>
+          <p>Absolutely wonderful Italian food. The pasta is fresh, the seafood is perfectly prepared, and the atmosphere is warm and inviting. Our server was attentive and knowledgeable about the menu. Will definitely be back!</p>
+          <span class="quote-mark"><i class="icon icon-quote-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      
+      <div class="review-slide">
+        <h3 class="reviews-source">
+          Review by &ndash;
+          
+          <i class="icon icon-google" aria-hidden="true"></i>
+          
+          
+          
+          
+          Google
+        </h3>
+        <p class="review-author">
+          James R.:
+          
+          <span class="stars">
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+          </span>
+          
+        </p>
+        <div class="review-body">
+          <span class="quote-mark"><i class="icon icon-quote-left" aria-hidden="true"></i></span>
+          <p>Best Italian restaurant in the Marietta area. The veal piccata was outstanding and the tiramisu was the perfect ending. Great wine selection too.</p>
+          <span class="quote-mark"><i class="icon icon-quote-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      
+      <div class="review-slide">
+        <h3 class="reviews-source">
+          Review by &ndash;
+          
+          
+          <i class="icon icon-yelp" aria-hidden="true"></i>
+          
+          
+          
+          Yelp
+        </h3>
+        <p class="review-author">
+          Linda K.:
+          
+          <span class="stars">
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+            <i class="icon icon-star" aria-hidden="true"></i>
+            
+          </span>
+          
+        </p>
+        <div class="review-body">
+          <span class="quote-mark"><i class="icon icon-quote-left" aria-hidden="true"></i></span>
+          <p>We've been coming here for years and the quality never drops. The lunch specials are a great deal and the catering for our office event was flawless.</p>
+          <span class="quote-mark"><i class="icon icon-quote-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      
+      
+
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="review-arrow review-prev" id="review-prev" aria-label="Previous review">
+      <i class="icon icon-angle-left" aria-hidden="true"></i>
+    </button>
+    <button class="review-arrow review-next" id="review-next" aria-label="Next review">
+      <i class="icon icon-angle-right" aria-hidden="true"></i>
+    </button>
+
+    <!-- Dot indicators — built by JS in dynamic mode, rendered at build time in static mode -->
+    <div class="review-dots" id="review-dots">
+      
+      
+      <button class="dot active" data-index="0" aria-label="Review 1"></button>
+      
+      <button class="dot" data-index="1" aria-label="Review 2"></button>
+      
+      <button class="dot" data-index="2" aria-label="Review 3"></button>
+      
+      
+    </div>
+
+    <!-- Auto-play toggle -->
+    <button class="review-pause-btn" id="review-pause" aria-label="Pause reviews">
+      <i class="icon icon-pause" aria-hidden="true"></i>
+    </button>
+
+  </div>
+</section>
+
+
+
+
 
     
 
@@ -578,6 +779,7 @@
        Geo coordinates from config.contact.geo for embed URL.
      ========================================================================== -->
 
+
 <section class="section-newsletter-map">
   <div class="newsletter-map-grid">
 
@@ -587,6 +789,41 @@
       <h2 class="newsletter-heading">Newsletter</h2>
 
       
+      <!-- GHL not yet configured — form captures locally, scaffold.py wires when ready -->
+      <form class="newsletter-form" action="#" method="post">
+        <p class="nl-subtitle">Sign up for our newsletter &amp; get exclusive offers and invites!</p>
+        <!-- GHL integration pending — form submissions stored locally until wired -->
+        <label for="nl-email">Email (required)</label>
+        <div class="newsletter-row">
+          <div class="nl-input-wrap">
+            <input type="email" id="nl-email" name="email" placeholder="e.g. email@example.com" required autocomplete="email">
+            <div class="nl-bar"></div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+      
+    </div>
+    
+
+    
+    <!-- Click-to-load map — zero Google Maps JS on page load -->
+    <div class="contact-map" id="map">
+      <div id="map-container"
+           style="width:100%;height:100%;min-height:450px;background:#e8e8e8;cursor:pointer;"
+           onclick="this.innerHTML='<iframe title=&quot;Mezza Luna Pasta & Seafood Marietta location map&quot; src=&quot;https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&amp;q=+Marietta+GA+30062&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;border:0;min-height:450px;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>'">
+        <div style="display:flex;align-items:center;justify-content:center;height:100%;min-height:450px;flex-direction:column;gap:8px;">
+          <span style="font-family:var(--font-heading);font-size:1rem;color:#555;"><i class="icon icon-map-marker" aria-hidden="true"></i> 2100 Roswell Rd #2198, Marietta, GA 30062</span>
+          <span style="font-size:0.875rem;color:#555;">Click to load map</span>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+
 
     <!-- SLOT: footer (includes contact section, footer bar, widgets, mobile footer) -->
     <!-- ========== FOOTER — Config-driven, rendered by scaffold.py ==========
@@ -617,6 +854,24 @@
         <h2>Hours</h2>
         
         <h3>Lunch</h3>
+        
+        <p>Monday - Thursday  &ndash; </p>
+        
+        <p>Saturday  &ndash; </p>
+        
+        <p>Sunday  &ndash; </p>
+        
+        
+        <h3>Dinner</h3>
+        
+        <p>Monday - Thursday  &ndash; </p>
+        
+        <p>Friday  &ndash; </p>
+        
+        <p>Saturday  &ndash; </p>
+        
+        <p>Sunday  &ndash; </p>
+        
         
       </div>
 
@@ -663,7 +918,15 @@
 
 <nav class="mobile-footer-bar" aria-label="mobile footer">
   
-  <a href="https://direct.chownow.com/order/11197/locations/15454"
+  <a href="https://direct.chownow.com/order/11197/locations/15454" target="_blank" rel="noopener">Order</a>
+  
+  <a href="/reservations/">Reservations</a>
+  
+  <a href="https://www.ezcater.com/catering/pvt/mezza-luna-pasta-and-seafood-marietta?fcv=1" target="_blank" rel="noopener">Catering</a>
+  
+</nav>
+
+
 
   </main>
 
